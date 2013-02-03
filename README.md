@@ -6,15 +6,15 @@ Overview
 --------
 The `rle` system is split across several packages.  This is the root package which imports a default, useful subset of the features; though if you want you can also pick and choose exactly the components you need.  Broadly speaking the library is split into the following parts:
 
-* `rle-core`: Foundational data structures and algorithms
-* `rle-stencils`: Commonly used stencils
-* `rle-mesh`: Surface extraction and meshing operations
-* `rle-funcs`: Functional programming primitives for narrowband levelsets
+* [`rle-core`](https://github.com/mikolalysenko/rle-core): Foundational data structures and algorithms
+* [`rle-stencils`](https://github.com/mikolalysenko/rle-stencils): Commonly used stencils
+* [`rle-mesh`](https://github.com/mikolalysenko/rle-mesh): Surface extraction and meshing operations
+* [`rle-funcs`](https://github.com/mikolalysenko/rle-funcs): Functional programming primitives for narrowband levelsets
 * `rle-topology`: Topological computations on level sets (connected component extraction, etc.)
 * `rle-classify`: Primitive classification and queries.  Supports points, lines, rays, boxes, etc.
 * `rle-repair`: Repair and validation methods
-* `rle-csg`: Constructive solid geometry (aka boolean set operations)
-* `rle-morphology`: Mathematical morphology for level sets.
+* [`rle-csg`](https://github.com/mikolalysenko/rle-csg): Constructive solid geometry (aka boolean set operations)
+* [`rle-morphology`](https://github.com/mikolalysenko/rle-morphology): Mathematical morphology for level sets.
 
 Installation
 ============
@@ -26,6 +26,29 @@ And then you can create volumes.  For a complete description of the imported met
 
 The documentation for each of the subcomponents can be found on their respective github pages.  If you don't want to yank in the whole library, you can also just pull in only the parts you need via npm.
 
+
+Status
+======
+* `rle-core`: 70%, multi iterators not tested
+* `rle-stencils`: 100%
+* `rle-mesh`: 90%, works well.  may evolve in the future.  Needs better testing
+* `rle-funcs`: 50%, merge needs work
+* `rle-repair`: 30%, missing functions
+* `rle-classify`: 10%
+* `rle-topology`: 10%
+* `rle-csg`: 50%
+* `rle-morphology`: 90%
+
+Future Ideas
+============
+* Fast marching methods for sampling
+* Level of detail
+* Linear transformations
+* Advection/warping
+* Rasterization for converting triangle meshes into level sets
+* Buffer reuse/pooling?
+
+
 Credits
 =======
-(c) 2013 Mikola Lysenko
+(c) 2013 Mikola Lysenko.  All packages are BSD Licensed
