@@ -2,10 +2,11 @@
 
 //Core API
 var core = require("rle-core");
+exports.compareCoord      = core.compareCoord;
+exports.saturateAbs       = core.saturateAbs;
 exports.EPSILON           = core.EPSILON;
 exports.POSITIVE_INFINITY = core.POSITIVE_INFINITY;
 exports.NEGATIVE_INFINITY = core.NEGATIVE_INFINITY;
-exports.compareCoord      = core.compareCoord;
 exports.DynamicVolume     = core.DynamicVolume;
 exports.StaticVolume      = core.StaticVolume;
 exports.sample            = core.sample;
@@ -22,8 +23,10 @@ exports.mesh              = require("rle-mesh");
 
 //Helper functions
 var funcs = require("rle-funcs");
-exports.apply             = funcs.apply;
 exports.merge             = funcs.merge;
+exports.mergePoint        = funcs.mergePoint;
+exports.apply             = funcs.apply;
+exports.applyPoint        = funcs.applyPoint;
 
 //Morphology
 var morphology = require("rle-morphology");
@@ -37,8 +40,12 @@ var csg = require("rle-csg");
 exports.unite             = csg.unite;
 exports.intersect         = csg.intersect;
 exports.subtract          = csg.subtract;
+exports.complement        = csg.complement;
 
 //Basic topology stuff
 var topology = require("rle-topology");
 exports.labelComponents   = topology.labelComponents;
 exports.splitComponents   = topology.splitComponents;
+
+//Rasterization
+exports.rasterize = require("rle-rasterize");

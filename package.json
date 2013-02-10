@@ -1,6 +1,6 @@
 {
   "name": "rle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "3D Multiphase Narrowband Level Sets in JavaScript",
   "main": "index.js",
   "dependencies": {
@@ -11,7 +11,8 @@
     "rle-stencils": "0.0.*",
     "rle-topology": "0.0.*",
     "rle-morphology": "0.0.*",
-    "rle-csg": "0.0.*"
+    "rle-csg": "0.0.*",
+    "rle-rasterize": "0.0.*"
   },
   "devDependencies": {},
   "scripts": {

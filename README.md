@@ -10,9 +10,10 @@ The `rle` system is split across several packages.  This is the root package whi
 * [`rle-stencils`](https://github.com/mikolalysenko/rle-stencils): Commonly used stencils
 * [`rle-mesh`](https://github.com/mikolalysenko/rle-mesh): Surface extraction and meshing operations
 * [`rle-funcs`](https://github.com/mikolalysenko/rle-funcs): Functional programming primitives for narrowband levelsets
-* `rle-topology`: Topological computations on level sets (connected component extraction, etc.)
-* `rle-classify`: Primitive classification and queries.  Supports points, lines, rays, boxes, etc.
-* `rle-repair`: Repair and validation methods
+* [`rle-topology`](https://github.com/mikolalysenko/rle-topology): Topological computations on level sets (connected component extraction, etc.)
+* [`rle-classify`](https://github.com/mikolalysenko/rle-classify): Primitive classification and queries.  Supports points, lines, rays, boxes, etc.
+* [`rle-repair`](https://github.com/mikolalysenko/rle-repair): Repair and validation methods
+* [`rle-rasterize`](https://github.com/mikolalysenko/rle-rasterize): Rasterizes meshes into level sets.
 * [`rle-csg`](https://github.com/mikolalysenko/rle-csg): Constructive solid geometry (aka boolean set operations)
 * [`rle-morphology`](https://github.com/mikolalysenko/rle-morphology): Mathematical morphology for level sets.
 
@@ -25,6 +26,14 @@ This library pulls in a commonly used subset of packages for working with narrow
 And then you can create volumes.  For a complete description of the imported methods, just look at the source code for index.js (it should be pretty self explanatory).
 
 The documentation for each of the subcomponents can be found on their respective github pages.  If you don't want to yank in the whole library, you can also just pull in only the parts you need via npm.
+
+Demos
+=====
+
+* Mesh extraction
+* Mesh extraction for multiphase level sets
+* CSG
+* Game of life 3D
 
 
 Status
