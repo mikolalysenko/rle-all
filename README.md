@@ -34,6 +34,7 @@ Demos
 * Mesh extraction for multiphase level sets
 * CSG
 * Game of life 3D
+* Voxelization
 
 
 Status
@@ -54,9 +55,7 @@ Future Ideas
 * Level of detail
 * Linear transformations
 * Advection/warping
-* Rasterization for converting triangle meshes into level sets
 * Buffer reuse/pooling?
-
 
 Credits
 =======

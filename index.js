@@ -21,6 +21,9 @@ exports.stencils          = require("rle-stencils");
 //Mesh generation
 exports.mesh              = require("rle-mesh");
 
+//Primitive classification
+exports.classify          = require("rle-classify");
+
 //Helper functions
 var funcs = require("rle-funcs");
 exports.merge             = funcs.merge;
