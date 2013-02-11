@@ -1,19 +1,19 @@
 {
   "name": "rle",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "3D Multiphase Narrowband Level Sets in JavaScript",
   "main": "index.js",
   "dependencies": {
-    "rle-core": "0.0.*",
-    "rle-mesh": "0.0.*",
-    "rle-funcs": "0.0.*",
-    "rle-repair": "0.0.*",
-    "rle-stencils": "0.0.*",
-    "rle-topology": "0.0.*",
-    "rle-morphology": "0.0.*",
-    "rle-csg": "0.0.*",
-    "rle-rasterize": "0.0.*",
-    "rle-classify": "0.0.*"
+    "rle-core": "~0.0",
+    "rle-mesh": "~0.0",
+    "rle-funcs": "~0.0",
+    "rle-repair": "~0.0",
+    "rle-stencils": "~0.0",
+    "rle-components": "~0.0",
+    "rle-morphology": "~0.0",
+    "rle-csg": "~0.0",
+    "rle-rasterize": "~0.0",
+    "rle-classify": "~0.0"
   },
   "devDependencies": {},
   "scripts": {

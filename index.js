@@ -45,10 +45,8 @@ exports.intersect         = csg.intersect;
 exports.subtract          = csg.subtract;
 exports.complement        = csg.complement;
 
-//Basic topology stuff
-var topology = require("rle-topology");
-exports.labelComponents   = topology.labelComponents;
-exports.splitComponents   = topology.splitComponents;
+//Connected component labelling
+exports.components        = require("rle-components");
 
 //Rasterization
-exports.rasterize = require("rle-rasterize");
+exports.rasterize         = require("rle-rasterize");
